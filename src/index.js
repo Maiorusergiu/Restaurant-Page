@@ -2,6 +2,7 @@ import { HomePage } from "./Home";
 import { ContactPage } from "./Contact";
 import { MenuPage } from "./Menu";
 import { createNavbar, createContentDiv, createFooter, clearContent } from "./pageLoad";
+import { addClass, removeClass } from "./HelperMethods";
 
 const render = () => {
 
@@ -19,9 +20,9 @@ HomePage();
 homePage.addEventListener('click', () => {
     if(!homePage.classList.contains('active')){ 
     clearContent();
-    homePage.classList.add('active');
-    menuPage.classList.remove('active');
-    contactPage.classList.remove('active');
+    addClass(homePage, "active");
+    removeClass(menuPage, 'active');
+    removeClass(contactPage, 'active');
     HomePage();
   
     }
@@ -29,9 +30,9 @@ homePage.addEventListener('click', () => {
 menuPage.addEventListener('click', () => {
     if(!menuPage.classList.contains('active')){
     clearContent();
-    menuPage.classList.add('active');
-    homePage.classList.remove('active');
-    contactPage.classList.remove('active');
+    removeClass(homePage, "active");
+    addClass(menuPage, 'active');
+    removeClass(contactPage, 'active');
     MenuPage();
     }
     
@@ -42,6 +43,9 @@ contactPage.addEventListener('click', () => {
     contactPage.classList.add('active');
     menuPage.classList.remove('active');
     homePage.classList.remove('active');
+    removeClass(homePage, "active");
+    removeClass(menuPage, 'active');
+    addClass(contactPage, 'active');
     ContactPage();
     }
    
@@ -55,12 +59,12 @@ const hamburgerNavTitle = document.querySelector('.hamburger-nav-title');
 
 function toggleMenu() {
   if (nav.classList.contains("showMenu")) {
-    nav.classList.remove("showMenu");
+    removeClass(nav, 'showMenu');
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
     hamburgerNavTitle.style.display = "block";
   } else {
-    nav.classList.add("showMenu");
+    addClass(nav, 'showMenu');
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
     hamburgerNavTitle.style.display = "none";
