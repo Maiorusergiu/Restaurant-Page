@@ -61,8 +61,6 @@ const createNavbar = (homePage, menuPage, contactPage) => {
             /*append pages to page list*/
             // /*Create navbar*/
 
-            const myNav = document.querySelector('.nav');
-            console.log(myNav);
             window.onscroll = function () { 
             if (document.documentElement.scrollTop >= 100 ) {
                 addClass(homePage, 'make-pages-text-smaller');
