@@ -7,7 +7,7 @@
 }
 body {
     /* background-color: #333333; */
-    background: url('../src/background-image/background.jpg') no-repeat fixed center;
+    background: url('https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg?w=1380&t=st=1675877277~exp=1675877877~hmac=1bb09c6bad7b444c6f3db23d6bd114ba445ad422f705d147e7d4c77a4a026cbe') no-repeat fixed center;
     background-size: cover; /* Resize the background image to cover the entire container */
     display: flex;
     flex-direction: column;
