@@ -91,7 +91,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 230px;
 }
 .footer-text {
     color: white;
@@ -492,9 +492,7 @@ span {
     .contact-location {
         flex-direction: column;
     }
-    .contact-us {
-        width: 90%;
-    }
+    
     form {
         padding: 25px 60px 25px 40px;
     }
@@ -573,9 +571,7 @@ span {
     }
 }
 @media screen and (max-width: 380px) {
-    .contact-us {
-        width: 100%;
-    }
+  
 }
 
 
