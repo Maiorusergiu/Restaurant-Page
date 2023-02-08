@@ -7,7 +7,7 @@
 }
 body {
     /* background-color: #333333; */
-    background: url('../src/assets/background.jpg') no-repeat fixed center;
+    background: url('../src/background-image/background.jpg') no-repeat fixed center;
     background-size: cover; /* Resize the background image to cover the entire container */
     display: flex;
     flex-direction: column;
