@@ -82,12 +82,15 @@ const createContentDiv = () => {
         document.body.insertBefore(content, footer);
 }
 const createFooter = () => {
+    const linkToGithub = document.createElement('a');
     const footer = document.createElement('footer');
       document.body.appendChild(footer);
+      footer.appendChild(linkToGithub);
       const footerText = document.createElement('small');
+      linkToGithub.href = "https://github.com/Maiorusergiu/Restaurant-Page";
+      linkToGithub.appendChild(footerText);
       const githubIcon = document.createElement("i");
       githubIcon.classList.add('bi', 'bi-github');
-      footer.appendChild(footerText);
       footerText.classList.add('footer-text');
       footerText.innerHTML = "&copy; Copyright 2023, SergiuWebDev <i class='bi bi-github'></i>";
 }
