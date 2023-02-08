@@ -590,7 +590,9 @@ span {
 
 
 /*Mobile*/
-
+a {
+    color: transparent;
+}
 
 /*Fade in*/
 .fade-in {
